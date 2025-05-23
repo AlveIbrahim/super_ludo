@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player Setup"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Players:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <NumberPicker
+        android:id="@+id/playerCountPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/NumberPickerTheme"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/player1Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 (Blue):"
+        android:textColor="#0066CC"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/player1NameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0066CC"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/player2Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2 (Green):"
+        android:textColor="#00CC66"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/player2NameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00CC66"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/player3Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 3 (Red):"
+        android:textColor="#CC0000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/player3NameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#CC0000"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/player4Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 4 (Yellow):"
+        android:textColor="#FFCC00"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/player4NameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFCC00"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/futuristic_button_background"
+            android:text="Cancel"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/futuristic_button_background"
+            android:text="Start Game"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>

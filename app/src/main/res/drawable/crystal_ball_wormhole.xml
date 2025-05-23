@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base crystal ball -->
+    <item android:drawable="@drawable/crystal_ball" />
+
+    <!-- Wormhole effect -->
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <gradient
+                android:type="sweep"
+                android:centerColor="#9966FF"
+                android:endColor="#6600CC" />
+            <size android:width="25dp" android:height="25dp" />
+        </shape>
+    </item>
+</layer-list>

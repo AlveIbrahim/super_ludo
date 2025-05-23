@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base crystal ball -->
+    <item android:drawable="@drawable/crystal_ball" />
+
+    <!-- Meteor effect -->
+    <item android:gravity="center">
+        <rotate android:fromDegrees="45">
+            <shape android:shape="oval">
+                <gradient
+                    android:type="linear"
+                    android:startColor="#FFCC00"
+                    android:endColor="#FF0000" />
+                <size android:width="25dp" android:height="15dp" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

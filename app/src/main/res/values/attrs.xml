@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Attributes for SpaceshipView -->
+    <declare-styleable name="SpaceshipView">
+        <attr name="shipColor" format="enum">
+            <enum name="blue" value="0" />
+            <enum name="green" value="1" />
+            <enum name="red" value="2" />
+            <enum name="yellow" value="3" />
+        </attr>
+        <attr name="shipNumber" format="integer" />
+        <attr name="reachedHome" format="boolean" />
+    </declare-styleable>
+
+    <!-- Attributes for BoardView -->
+    <declare-styleable name="BoardView">
+        <attr name="gridLineColor" format="color" />
+        <attr name="cellSize" format="dimension" />
+        <attr name="selectionColor" format="color" />
+    </declare-styleable>
+
+    <!-- Attributes for CrystalBallView -->
+    <declare-styleable name="CrystalBallView">
+        <attr name="ballColor" format="color" />
+        <attr name="glowColor" format="color" />
+        <attr name="ballSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- Attributes for PlayerStatusView -->
+    <declare-styleable name="PlayerStatusView">
+        <attr name="playerIndex" format="integer" />
+        <attr name="statusText" format="string" />
+        <attr name="isActive" format="boolean" />
+    </declare-styleable>
+
+    <!-- Attributes for GameEventView -->
+    <declare-styleable name="GameEventView">
+        <attr name="eventType" format="enum">
+            <enum name="normalRoll" value="0" />
+            <enum name="blackHole" value="1" />
+            <enum name="meteorStrike" value="2" />
+            <enum name="wormhole" value="3" />
+            <enum name="superBoost" value="4" />
+            <enum name="alienInvasion" value="5" />
+        </attr>
+        <attr name="eventValue" format="integer" />
+    </declare-styleable>
+</resources>

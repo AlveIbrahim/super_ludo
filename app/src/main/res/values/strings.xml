@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GiiKER Super Ludo</string>
+    <string name="app_title">GiiKER SUPER LUDO</string>
+    <string name="app_subtitle">Space Adventure Edition</string>
+    <string name="start_game">Start Game</string>
+    <string name="how_to_play">How To Play</string>
+    <string name="quit">Quit</string>
+    <string name="player_name">Player</string>
+    <string name="player_turn">Player 1\'s Turn</string>
+    <string name="waiting">Waiting...</string>
+    <string name="spaceship_1">Spaceship 1</string>
+    <string name="spaceship_2">Spaceship 2</string>
+    <string name="spaceship_3">Spaceship 3</string>
+    <string name="reset_game">Reset</string>
+    <string name="quit_game">Quit</string>
+    <string name="event_title">Event</string>
+    <string name="event_icon">Event Icon</string>
+    <string name="event_description">Event Description</string>
+    <string name="ok">OK</string>
+    <string name="back_to_menu">Back to Menu</string>
+    <string name="game_objective">The goal is to navigate all three of your spaceships from your base to your home by completing a full lap around the universe. Be the first player to get all ships home to win!</string>
+    <string name="crystal_ball_title">Smart Crystal Ball Events</string>
+    <string name="normal_roll">Normal Roll</string>
+    <string name="normal_roll_desc">Move your spaceship forward 1-6 spaces.</string>
+    <string name="black_hole">Black Hole</string>
+    <string name="black_hole_desc">You lose your turn as your ship gets caught in a gravitational field.</string>
+    <string name="meteor_strike">Meteor Strike</string>
+    <string name="meteor_strike_desc">Send an opponent\'s ship back to their base.</string>
+    <string name="wormhole">Wormhole</string>
+    <string name="wormhole_desc">Jump forward to the next safe zone.</string>
+    <string name="super_boost">Super Boost</string>
+    <string name="super_boost_desc">Take an extra turn!</string>
+    <string name="alien_invasion">Alien Invasion</string>
+    <string name="alien_invasion_desc">Send an opponent\'s ship to a random location.</string>
+    <string name="movement_rules_title">Movement Rules</string>
+    <string name="movement_rules_desc">• You need to roll a 6 to move a ship out of your base.\n\n• Landing on an opponent\'s ship sends it back to their base.\n\n• Ships on safe zones are protected from being sent back.\n\n• You must reach home by exact count.</string>
+</resources>

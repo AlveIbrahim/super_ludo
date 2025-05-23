@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Board dimensions for phone -->
+    <dimen name="board_cell_size">32dp</dimen>
+    <dimen name="spaceship_size">24dp</dimen>
+    <dimen name="crystal_ball_size">80dp</dimen>
+
+    <!-- Board dimensions for tablet -->
+    <dimen name="board_cell_size_tablet">48dp</dimen>
+    <dimen name="spaceship_size_tablet">36dp</dimen>
+    <dimen name="crystal_ball_size_tablet">120dp</dimen>
+</resources>

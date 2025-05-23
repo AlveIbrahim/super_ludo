@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Body -->
+    <path
+        android:fillColor="#CC0000"
+        android:pathData="M12,2 L16,10 L16,18 L8,18 L8,10 Z" />
+
+    <!-- Windows -->
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M12,5 A2,2 0 1,1 12,5.0001" />
+
+    <!-- Engine -->
+    <path
+        android:fillColor="#660000"
+        android:pathData="M8,18 L6,22 L18,22 L16,18 Z" />
+
+    <!-- Glow Effect -->
+    <path
+        android:fillColor="#FFCCCC"
+        android:pathData="M12,2 L14,2.5 L16,10 L14,9.5 Z" />
+</vector>
