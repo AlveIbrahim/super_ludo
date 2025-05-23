@@ -1,4 +1,4 @@
-package com.example.super_ludo.activites;
+package com.example.super_ludo.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

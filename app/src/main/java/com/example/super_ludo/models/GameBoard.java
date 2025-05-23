@@ -82,7 +82,7 @@ public class GameBoard {
 
         // Bottom row (left to right)
         for (int x = 0; x < BOARD_SIZE; x++) {
-            cells[BOARD_SIZE-1][x].type = CellType.PATH;
+            cells[BOARD_SIZE-1][x].setType(CellType.PATH);
         }
 
         // Right column (bottom to top)
@@ -92,12 +92,12 @@ public class GameBoard {
 
         // Top row (right to left)
         for (int x = BOARD_SIZE-2; x >= 0; x--) {
-            cells[0][x].type = CellType.PATH;
+            cells[0][x].setType(CellType.PATH);
         }
 
         // Left column (top to bottom)
         for (int y = 1; y < BOARD_SIZE-1; y++) {
-            cells[y][0].type = CellType.PATH;
+            cells[y][0].setType(CellType.PATH);
         }
     }
 
@@ -112,29 +112,29 @@ public class GameBoard {
             for (int x = BOARD_SIZE-3; x < BOARD_SIZE; x++) {
                 if (x == BOARD_SIZE-1 && y == BOARD_SIZE-1) continue; // Skip the corner cell (part of main path)
 
-                cells[y][x].type = CellType.BASE;
-                cells[y][x].color = color;
+                cells[y][x].setType(CellType.BASE);
+                cells[y][x].setColor(color);
                 baseCells.get(color).add(cells[y][x]);
             }
         }
 
         // Start position
         BoardCell startCell = cells[BOARD_SIZE-1][BOARD_SIZE-2];
-        startCell.type = CellType.START;
-        startCell.color = color;
+        startCell.setType(CellType.START);
+        startCell.setColor(color);
         startPositions.put(color, startCell);
 
         // Home path (vertical path towards center)
         for (int y = BOARD_SIZE-2; y > BOARD_SIZE/2; y--) {
-            cells[y][BOARD_SIZE/2].type = CellType.HOME_PATH;
-            cells[y][BOARD_SIZE/2].color = color;
+            cells[y][BOARD_SIZE/2].setType(CellType.HOME_PATH);
+            cells[y][BOARD_SIZE/2].setColor(color);
             homePaths.get(color).add(cells[y][BOARD_SIZE/2]);
         }
 
         // Home position (center of board)
         BoardCell homeCell = cells[BOARD_SIZE/2][BOARD_SIZE/2];
-        homeCell.type = CellType.HOME;
-        homeCell.color = color;
+        homeCell.setType(CellType.HOME);
+        homeCell.setColor(color);
         homePositions.put(color, homeCell);
     }
 
@@ -149,22 +149,22 @@ public class GameBoard {
             for (int x = BOARD_SIZE-3; x < BOARD_SIZE; x++) {
                 if (x == BOARD_SIZE-1 && y == 0) continue; // Skip the corner cell (part of main path)
 
-                cells[y][x].type = CellType.BASE;
-                cells[y][x].color = color;
+                cells[y][x].setType(CellType.BASE);
+                cells[y][x].setColor(color);
                 baseCells.get(color).add(cells[y][x]);
             }
         }
 
         // Start position
         BoardCell startCell = cells[0][BOARD_SIZE-2];
-        startCell.type = CellType.START;
-        startCell.color = color;
+        cells[y][x].setType(CellType.BASE);
+        cells[y][x].setColor(color);
         startPositions.put(color, startCell);
 
         // Home path (horizontal path towards center)
         for (int x = BOARD_SIZE-2; x > BOARD_SIZE/2; x--) {
-            cells[BOARD_SIZE/2][x].type = CellType.HOME_PATH;
-            cells[BOARD_SIZE/2][x].color = color;
+            cells[BOARD_SIZE/2][x].setType(CellType.HOME_PATH);
+            cells[BOARD_SIZE/2][x].setColor(color);
             homePaths.get(color).add(cells[BOARD_SIZE/2][x]);
         }
 
@@ -183,22 +183,22 @@ public class GameBoard {
             for (int x = 0; x < 3; x++) {
                 if (x == 0 && y == 0) continue; // Skip the corner cell (part of main path)
 
-                cells[y][x].type = CellType.BASE;
-                cells[y][x].color = color;
+                cells[y][x].setType(CellType.BASE);
+                cells[y][x].setColor(color);
                 baseCells.get(color).add(cells[y][x]);
             }
         }
 
         // Start position
         BoardCell startCell = cells[0][1];
-        startCell.type = CellType.START;
-        startCell.color = color;
+        startCell.setType(CellType.START);
+        startCell.setColor(color);
         startPositions.put(color, startCell);
 
         // Home path (vertical path towards center)
         for (int y = 1; y < BOARD_SIZE/2; y++) {
-            cells[y][BOARD_SIZE/2].type = CellType.HOME_PATH;
-            cells[y][BOARD_SIZE/2].color = color;
+            cells[y][BOARD_SIZE/2].setType(CellType.HOME_PATH);
+            cells[y][BOARD_SIZE/2].setColor(color);
             homePaths.get(color).add(cells[y][BOARD_SIZE/2]);
         }
 
@@ -217,22 +217,22 @@ public class GameBoard {
             for (int x = 0; x < 3; x++) {
                 if (x == 0 && y == BOARD_SIZE-1) continue; // Skip the corner cell (part of main path)
 
-                cells[y][x].type = CellType.BASE;
-                cells[y][x].color = color;
+                cells[y][x].setType(CellType.BASE);
+                cells[y][x].setColor(color);
                 baseCells.get(color).add(cells[y][x]);
             }
         }
 
         // Start position
         BoardCell startCell = cells[BOARD_SIZE-1][1];
-        startCell.type = CellType.START;
-        startCell.color = color;
+        startCell.setType(CellType.START);
+        startCell.setColor(color);
         startPositions.put(color, startCell);
 
         // Home path (horizontal path towards center)
         for (int x = 1; x < BOARD_SIZE/2; x++) {
-            cells[BOARD_SIZE/2][x].type = CellType.HOME_PATH;
-            cells[BOARD_SIZE/2][x].color = color;
+            cells[BOARD_SIZE/2][x].setType(CellType.HOME_PATH);
+            cells[BOARD_SIZE/2][x].setColor(color);
             homePaths.get(color).add(cells[BOARD_SIZE/2][x]);
         }
 
@@ -248,19 +248,19 @@ public class GameBoard {
         // This is a simplified example
 
         // Bottom row
-        cells[BOARD_SIZE-1][BOARD_SIZE/2].type = CellType.SAFE_ZONE;
+        cells[BOARD_SIZE-1][BOARD_SIZE/2].setType(CellType.SAFE_ZONE);
         safeZones.add(cells[BOARD_SIZE-1][BOARD_SIZE/2]);
 
         // Right column
-        cells[BOARD_SIZE/2][BOARD_SIZE-1].type = CellType.SAFE_ZONE;
+        cells[BOARD_SIZE/2][BOARD_SIZE-1].settype (CellType.SAFE_ZONE);
         safeZones.add(cells[BOARD_SIZE/2][BOARD_SIZE-1]);
 
         // Top row
-        cells[0][BOARD_SIZE/2].type = CellType.SAFE_ZONE;
+        cells[0][BOARD_SIZE/2].setType(CellType.SAFE_ZONE);
         safeZones.add(cells[0][BOARD_SIZE/2]);
 
         // Left column
-        cells[BOARD_SIZE/2][0].type = CellType.SAFE_ZONE;
+        cells[BOARD_SIZE/2][0].setType(CellType.SAFE_ZONE);
         safeZones.add(cells[BOARD_SIZE/2][0]);
     }
 

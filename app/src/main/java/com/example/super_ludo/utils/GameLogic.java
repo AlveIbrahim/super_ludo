@@ -76,7 +76,7 @@ public class GameLogic {
         if (position == null) return false;
 
         // Check if cell is part of home path for this color
-        return position.getType() == com.giiker.superludo.models.CellType.HOME_PATH &&
+        return position.getType() == com.example.super_ludo.models.CellType.HOME_PATH &&
                 position.getColor() == ship.getColor();
     }
 

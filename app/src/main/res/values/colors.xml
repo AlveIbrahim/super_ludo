@@ -12,4 +12,8 @@
     <color name="boardBackground">#000033</color>
     <color name="boardGrid">#444488</color>
     <color name="safeZone">#8888FF</color>
+
+    <!-- Add missing gradient colors for default_background.xml -->
+    <color name="background_gradient_start">#191970</color>
+    <color name="background_gradient_end">#000033</color>
 </resources>

@@ -24,30 +24,30 @@ public enum PlayerColor {
     public int getDrawableResourceId() {
         switch (this) {
             case BLUE:
-                return com.giiker.superludo.R.drawable.spaceship_blue;
+                return com.example.super_ludo.R.drawable.spaceship_blue;
             case GREEN:
-                return com.giiker.superludo.R.drawable.spaceship_green;
+                return com.example.super_ludo.R.drawable.spaceship_green;
             case RED:
-                return com.giiker.superludo.R.drawable.spaceship_red;
+                return com.example.super_ludo.R.drawable.spaceship_red;
             case YELLOW:
-                return com.giiker.superludo.R.drawable.spaceship_yellow;
+                return com.example.super_ludo.R.drawable.spaceship_yellow;
             default:
-                return com.giiker.superludo.R.drawable.spaceship_blue;
+                return com.example.super_ludo.R.drawable.spaceship_blue;
         }
     }
 
     public int getCellDrawableResourceId() {
         switch (this) {
             case BLUE:
-                return com.giiker.superludo.R.drawable.board_cell_blue;
+                return com.example.super_ludo.R.drawable.board_cell_blue;
             case GREEN:
-                return com.giiker.superludo.R.drawable.board_cell_green;
+                return com.example.super_ludo.R.drawable.board_cell_green;
             case RED:
-                return com.giiker.superludo.R.drawable.board_cell_red;
+                return com.example.super_ludo.R.drawable.board_cell_red;
             case YELLOW:
-                return com.giiker.superludo.R.drawable.board_cell_yellow;
+                return com.example.super_ludo.R.drawable.board_cell_yellow;
             default:
-                return com.giiker.superludo.R.drawable.board_cell_blue;
+                return com.example.super_ludo.R.drawable.board_cell_blue;
         }
     }
 }

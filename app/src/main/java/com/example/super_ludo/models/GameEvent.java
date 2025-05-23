@@ -31,19 +31,19 @@ public class GameEvent {
     public int getDrawableResourceId() {
         switch (type) {
             case NORMAL_ROLL:
-                return com.giiker.superludo.R.drawable.crystal_ball_normal;
+                return com.example.super_ludo.R.drawable.crystal_ball_normal;
             case BLACK_HOLE:
-                return com.giiker.superludo.R.drawable.crystal_ball_black_hole;
+                return com.example.super_ludo.R.drawable.crystal_ball_black_hole;
             case METEOR_STRIKE:
-                return com.giiker.superludo.R.drawable.crystal_ball_meteor;
+                return com.example.super_ludo.R.drawable.crystal_ball_meteor;
             case WORMHOLE:
-                return com.giiker.superludo.R.drawable.crystal_ball_wormhole;
+                return com.example.super_ludo.R.drawable.crystal_ball_wormhole;
             case SUPER_BOOST:
-                return com.giiker.superludo.R.drawable.crystal_ball_boost;
+                return com.example.super_ludo.R.drawable.crystal_ball_boost;
             case ALIEN_INVASION:
-                return com.giiker.superludo.R.drawable.crystal_ball_alien;
+                return com.example.super_ludo.R.drawable.crystal_ball_alien;
             default:
-                return com.giiker.superludo.R.drawable.crystal_ball;
+                return com.example.super_ludo.R.drawable.crystal_ball;
         }
     }
 
@@ -53,19 +53,19 @@ public class GameEvent {
     public int getTitleResourceId() {
         switch (type) {
             case NORMAL_ROLL:
-                return com.giiker.superludo.R.string.normal_roll;
+                return com.example.super_ludo.R.string.normal_roll;
             case BLACK_HOLE:
-                return com.giiker.superludo.R.string.black_hole;
+                return com.example.super_ludo.R.string.black_hole;
             case METEOR_STRIKE:
-                return com.giiker.superludo.R.string.meteor_strike;
+                return com.example.super_ludo.R.string.meteor_strike;
             case WORMHOLE:
-                return com.giiker.superludo.R.string.wormhole;
+                return com.example.super_ludo.R.string.wormhole;
             case SUPER_BOOST:
-                return com.giiker.superludo.R.string.super_boost;
+                return com.example.super_ludo.R.string.super_boost;
             case ALIEN_INVASION:
-                return com.giiker.superludo.R.string.alien_invasion;
+                return com.example.super_ludo.R.string.alien_invasion;
             default:
-                return com.giiker.superludo.R.string.event_title;
+                return com.example.super_ludo.R.string.event_title;
         }
     }
 
@@ -75,19 +75,19 @@ public class GameEvent {
     public int getDescriptionResourceId() {
         switch (type) {
             case NORMAL_ROLL:
-                return com.giiker.superludo.R.string.normal_roll_desc;
+                return com.example.super_ludo.R.string.normal_roll_desc;
             case BLACK_HOLE:
-                return com.giiker.superludo.R.string.black_hole_desc;
+                return com.example.super_ludo.R.string.black_hole_desc;
             case METEOR_STRIKE:
-                return com.giiker.superludo.R.string.meteor_strike_desc;
+                return com.example.super_ludo.R.string.meteor_strike_desc;
             case WORMHOLE:
-                return com.giiker.superludo.R.string.wormhole_desc;
+                return com.example.super_ludo.R.string.wormhole_desc;
             case SUPER_BOOST:
-                return com.giiker.superludo.R.string.super_boost_desc;
+                return com.example.super_ludo.R.string.super_boost_desc;
             case ALIEN_INVASION:
-                return com.giiker.superludo.R.string.alien_invasion_desc;
+                return com.example.super_ludo.R.string.alien_invasion_desc;
             default:
-                return com.giiker.superludo.R.string.event_description;
+                return com.example.super_ludo.R.string.event_description;
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.example.super_ludo.activites;
+package com.example.super_ludo.activities;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -20,7 +20,7 @@ import com.example.super_ludo.models.GameEvent;
 import com.example.super_ludo.models.GameState;
 import com.example.super_ludo.models.Player;
 import com.example.super_ludo.models.Spaceship;
-import com.example.super_ludo.utils.AnimationUtils;
+import com.example.super_ludo.utils.GameAnimationUtils;
 import com.example.super_ludo.utils.SoundManager;
 import com.example.super_ludo.viewmodels.GameViewModel;
 import com.example.super_ludo.viewmodels.SettingsViewModel;
@@ -51,7 +51,7 @@ public class GameActivity extends AppCompatActivity implements
 
     // Utilities
     private SoundManager soundManager;
-    private AnimationUtils animationUtils;
+    private GameAnimationUtils gameAnimationUtils;
     private Vibrator vibrator;
 
     @Override
@@ -65,7 +65,7 @@ public class GameActivity extends AppCompatActivity implements
 
         // Initialize utilities
         soundManager = new SoundManager(this);
-        animationUtils = new AnimationUtils(this);
+        gameAnimationUtils = new GameAnimationUtils(this);
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         // Initialize UI elements
@@ -165,7 +165,7 @@ public class GameActivity extends AppCompatActivity implements
         settingsViewModel.getAnimationSpeed().observe(this, new Observer<Integer>() {
             @Override
             public void onChanged(Integer speed) {
-                animationUtils.setAnimationSpeed(speed);
+                gameAnimationUtils.setAnimationSpeed(speed);
             }
         });
     }

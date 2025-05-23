@@ -3,19 +3,18 @@ package com.example.super_ludo.utils;
 import android.content.Context;
 import android.view.View;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 
 import com.example.super_ludo.R;
 
 /**
  * Utility class for managing animations.
  */
-public class AnimationUtils {
+public class GameAnimationUtils {
 
     private Context context;
     private int animationSpeed = 100; // Default 100% speed
 
-    public AnimationUtils(Context context) {
+    public GameAnimationUtils(Context context) {
         this.context = context;
     }
 
