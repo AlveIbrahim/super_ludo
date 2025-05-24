@@ -38,8 +38,16 @@ public class BoardCell {
         return type;
     }
 
+    public void setType(CellType type) {
+        this.type = type;
+    }
+
     public PlayerColor getColor() {
         return color;
+    }
+
+    public void setColor(PlayerColor color) {
+        this.color = color;
     }
 
     public List<Spaceship> getSpaceships() {

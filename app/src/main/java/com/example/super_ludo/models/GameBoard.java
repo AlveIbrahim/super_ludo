@@ -87,7 +87,7 @@ public class GameBoard {
 
         // Right column (bottom to top)
         for (int y = BOARD_SIZE-2; y >= 0; y--) {
-            cells[y][BOARD_SIZE-1].type = CellType.PATH;
+            cells[y][BOARD_SIZE-1].setType(CellType.PATH);
         }
 
         // Top row (right to left)
@@ -157,8 +157,8 @@ public class GameBoard {
 
         // Start position
         BoardCell startCell = cells[0][BOARD_SIZE-2];
-        cells[y][x].setType(CellType.BASE);
-        cells[y][x].setColor(color);
+        startCell.setType(CellType.START);    // Use startCell, not cells[y][x]
+        startCell.setColor(color);             // Use startCell, not cells[y][x]
         startPositions.put(color, startCell);
 
         // Home path (horizontal path towards center)
@@ -252,7 +252,7 @@ public class GameBoard {
         safeZones.add(cells[BOARD_SIZE-1][BOARD_SIZE/2]);
 
         // Right column
-        cells[BOARD_SIZE/2][BOARD_SIZE-1].settype (CellType.SAFE_ZONE);
+        cells[BOARD_SIZE/2][BOARD_SIZE-1].setType (CellType.SAFE_ZONE);
         safeZones.add(cells[BOARD_SIZE/2][BOARD_SIZE-1]);
 
         // Top row
