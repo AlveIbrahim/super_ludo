@@ -12,9 +12,10 @@
     </item>
 
     <!-- Stars (dots) -->
-    <item>
-        <bitmap
-            android:src="@drawable/stars_pattern"
-            android:tileMode="repeat" />
-    </item>
+    <item android:drawable="@drawable/stars_pattern" />
+<!--    <item>-->
+<!--        <bitmap-->
+<!--            android:src="@drawable/stars_pattern"-->
+<!--            android:tileMode="repeat" />-->
+<!--    </item>-->
 </layer-list>
